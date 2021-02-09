@@ -1,0 +1,48 @@
+// INSTALAR DEPENDENCIAS ELCTRON;NODE;CHROMIUM:
+
+npm i -D electron-nightly
+npm init -y <-- DENTRO DA PASTA DO PROJETO
+npm install electron --save-dev <-- DENTRO DA PASTA DO PROJETO
+
+// INSTALAR YARN 
+
+npm install -g yarn
+
+// INSTALAR GIT
+
+npm install --save npm-git-install
+
+// INSTALAR JQUERY
+
+NO NAVEGADOR:
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+NO NODE:
+npm install jquery
+INTANCIAR:
+var $ = require( "jquery" ); -- COLOCAR NO JS DIRETO OU :
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
+
+// INSTALAR MYSQL E MYSQL CONECTR
+
+npm install mysql
+
+// INSTALAR ELECTRON RELOAD 
+
+npm install electron-reload
+
+
+//INSTALAR ELECTRON FORGE
+******* FUNCIONA SOMENTE COM O YARN********
+ yarn add --dev @electron-forge/cli
+ yarn electron-forge import
+
+//INICIO DO GIT NO REPOSITORIO: 
+git init
+git status
+git add
+git commit -m "mensagem"
+git branch -M main
+git remote add origin https://github.com/CodWF/WFSystem.git
+git push -u origin main
