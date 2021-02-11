@@ -1,9 +1,10 @@
 {
-  "name": "wfsystem",
+  "name": "WFSystem",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
@@ -13,7 +14,7 @@
     "url": "git+https://github.com/CodWF/WFSystem.git"
   },
   "keywords": [],
-  "author": "Weligton Fernandes",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CodWF/WFSystem/issues"
@@ -26,19 +27,17 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
     "electron": "^11.2.3",
-    "jquery": "^3.5.1",
-    "mysql": "^2.18.1"
+    "electron-nightly": "^13.0.0-nightly.20210210"
   },
   "dependencies": {
-    "@mapbox/node-pre-gyp": "^1.0.0",
     "body-parser": "^1.19.0",
-    "electron-forge": "^5.2.4",
     "electron-reload": "^1.5.0",
     "electron-squirrel-startup": "^1.0.0",
     "express": "^4.17.1",
-    "har-validator": "^5.1.5",
-    "npm-git-install": "^0.3.0",
-    "request": "^2.88.2"
+    "express-handlebars": "^5.2.0",
+    "jquery": "^3.5.1",
+    "mysql": "^2.18.1",
+    "npm-git-install": "^0.3.0"
   },
   "config": {
     "forge": {
