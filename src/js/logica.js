@@ -1,3 +1,4 @@
+const db = require('./banco');
 console.log("logica funcionando");
 //Validar os campos usados no Login
 let user = "admin";
@@ -76,7 +77,7 @@ function indexCaixa() {
 
 $(document).ready(function () {
     const {
-        remote
+        remote, app,
     } = require('electron');
 
     $('#btnSair').click(function () {
@@ -87,7 +88,23 @@ $(document).ready(function () {
 
 });
 
-function tec() {    
+function tec() {
     document.getElementById("usu").innerHTML = "admin";
 }
 
+
+
+$('#insert_form').on('submit', function (event) {
+    event.preventDefault();
+    var dados = $('#insert_form').serialize();
+    $.post(dados, function (retorna) {
+        alert("oi");
+    });
+});
+
+
+const cadastro = db.define('tb_usuarios'.{
+    nome: {
+        
+    }
+});

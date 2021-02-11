@@ -4,6 +4,9 @@ const {
   nativeImage
 } = require("electron");
 
+
+
+
 // Habilita o live reload no Electron e no FrontEnd da aplicação com a lib electron-reload
 // Assim que alguma alteração no código é feita
 require("electron-reload")(__dirname, {
@@ -30,8 +33,8 @@ function createWindow() {
     webPreferences: {
       // habilita a integração do Node.js no FrontEnd
       nodeIntegration: true,
-      contextIsolation: false,     
-      
+      contextIsolation: false,
+
     },
   });
 

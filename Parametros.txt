@@ -17,7 +17,7 @@ npm install --save npm-git-install
 NO NAVEGADOR:
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 NO NODE:
-npm install jquery
+npm install --save jquery
 INTANCIAR:
 var $ = require( "jquery" ); -- COLOCAR NO JS DIRETO OU :
 const { JSDOM } = require( "jsdom" );
@@ -26,7 +26,10 @@ const $ = require( "jquery" )( window );
 
 // INSTALAR MYSQL E MYSQL CONECTR
 
-npm install mysql
+npm install --save mysql
+
+// INSTALAR O BODY-PARSER ( USAR METODO GET E POST)
+yarn add body-parser
 
 // INSTALAR ELECTRON RELOAD 
 

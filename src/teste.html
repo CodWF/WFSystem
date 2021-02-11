@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WFSystem - TESTE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/photon.css">
+
+
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+
+
+</head>
+
+<body onload="time()">
+
+    <div class=" bg-dark bg-gradient font-monospace fw-bolder window text-center">
+
+        <!--CABECALHO-->
+        <header class="linhadiv">
+            <div class="text-light  text-center " id="txt"></div>
+        </header>
+        <!--CORPO-->
+        <div class="CORPO">
+            <br>
+            <a class="btn btn-danger align-content-center" href="index.html">Inicio</a>
+            <br>
+            <br>
+            <br>
+            <div class="container-sm bg-secondary h-100 col-md-9">
+                <form method="POST" id="insert_form" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputName" class="h3 form-label">Usuario:</label>
+                        <input placeholder="Nome de Usuario." name="cadUsu" type="text" class="form-control" id="inputCity">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class=" h3 form-label">Senha:</label>
+                        <input placeholder="Senha do Usuario." name="cadSenha" type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-1 g-3">
+                        <input type="submit" value="Cadastrar" class="btn btn-success">
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+        <!--RODAPE-->
+        <footer class=" bg-dark linhadiv  rodape">
+
+            <a class="hover  mouse" target="_blank" href="https://www.facebook.com/NegrillosBF/">WFSYSTEM - Welington Fernandes</a>
+
+        </footer>
+        <!-- COMENTARIO -->
+
+
+    </div>  
+
+
+
+    <!--ARQUIVOS DE JAVASCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script language="JavaScript" type="text/javascript" src="./js/logica.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./js/banco.js"></script>
+
+
+</body>
+
+</html>
