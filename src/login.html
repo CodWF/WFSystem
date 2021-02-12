@@ -12,7 +12,7 @@
 
   <!-- Javascript -->
   <script>
-    window.$ = window.jQuery = require('jquery');
+    //window.$ = window.jQuery = require('jquery');
   </script>
 </head>
 
@@ -35,11 +35,12 @@
           <img src="./img/logo.png" style="max-width: 64px; max-height: 64px;" id="icon" alt="User Icon" />
         </div>
 
-        <!-- Login Form -->
-        <form name="frmLogin" method="post" onsubmit="javascript:return ValidarLogin(txtLogin.value,txtSenha.value);" action="index.html">
+        <!-- Login Form  onsubmit="javascript:return ValidarLogin(txtLogin.value,txtSenha.value); -->
+        <form name="frmLogin" method="POST" >
           <input type="text" id="login" class="fadeIn second" name="txtLogin" placeholder="Login">
           <input type="text" id="password" class="fadeIn third" name="txtSenha" placeholder="Senha">
-          <input type="submit" name="btnEnviar" class="fadeIn  fourth" value="Log In">
+          <input type="button" onclick="check(txtLogin.value,txtSenha.value)" name="btnEnviar" class="fadeIn  fourth" value="Log In">
+          <div id="statusUsu">Status...</div>
         </form>
         <!-- Remind Passowrd -->
         <div class="bg-secondary bg-gradient" id="formFooter">
@@ -52,7 +53,7 @@
     </div>
     <!--RODAPE-->
     <footer class=" bg-dark linhadiv rodape">
-      <a class="hover" target="_blank" href="https://www.facebook.com/NegrillosBF/">WFSYSTEM - Welington Fernandes</a>
+      <a class="hover text-decoration-none mouse" target="_blank" href="https://www.facebook.com/NegrillosBF/">WFSYSTEM - Welington Fernandes</a>
     </footer>
 
 

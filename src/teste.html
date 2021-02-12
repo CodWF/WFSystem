@@ -32,18 +32,21 @@
             <br>
             <br>
             <div class="container-sm bg-secondary h-100 col-md-9">
-                <form method="POST" id="insert_form" class="row g-3">
+                <form name="form1" method="POST" class="row g-3">
                     <div class="col-md-6">
                         <label for="inputName" class="h3 form-label">Usuario:</label>
-                        <input placeholder="Nome de Usuario." name="cadUsu" type="text" class="form-control" id="inputCity">
+                        <input placeholder="Nome de Usuario." id="cadUsu" name="cadUsu" type="text" class="form-control">
                     </div>
 
                     <div class="col-md-6">
                         <label for="inputPassword4" class=" h3 form-label">Senha:</label>
-                        <input placeholder="Senha do Usuario." name="cadSenha" type="password" class="form-control" id="inputPassword4">
+                        <input placeholder="Senha do Usuario." id="cadSenha" name="cadSenha" type="password" class="form-control">
                     </div>
-                    <div class="col-1 g-3">
-                        <input type="submit" value="Cadastrar" class="btn btn-success">
+                    <div class="col-6 g-3">
+                        <input type="button" onclick="btnCreate(cadUsu.value,cadSenha.value)" value="create" class="btn btn-success">
+                        <input type="button" onclick="btnRead(cadUsu.value,cadSenha.value)"   value="read" class="btn btn-light">
+                        <input type="button" onclick="btnUpdate(cadUsu.value,cadSenha.value)" value="update" class="btn btn-info">
+                        <input type="button" onclick="btnDelete(cadUsu.value,cadSenha.value)" value="delete" class="btn btn-danger">
                     </div>
                 </form>
             </div>
@@ -53,14 +56,13 @@
         </div>
         <!--RODAPE-->
         <footer class=" bg-dark linhadiv  rodape">
-
-            <a class="hover  mouse" target="_blank" href="https://www.facebook.com/NegrillosBF/">WFSYSTEM - Welington Fernandes</a>
+            <a class="hover text-decoration-none mouse" target="_blank" href="https://www.facebook.com/NegrillosBF/">WFSYSTEM - Welington Fernandes</a>
 
         </footer>
         <!-- COMENTARIO -->
 
 
-    </div>  
+    </div>
 
 
 
@@ -69,7 +71,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!-- Javascript -->
     <script language="JavaScript" type="text/javascript" src="./js/logica.js"></script>
-    <script language="JavaScript" type="text/javascript" src="./js/banco.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./js/ex.js"></script>
+
 
 
 </body>
