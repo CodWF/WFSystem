@@ -14,11 +14,14 @@ var read = 'SELECT * FROM `tb_usuarios` LIMIT 10';
 function btnCreate(addu, adds) {
     console.log(addu);
     console.log(adds);
-    $postU = addu;
-    $postS = adds;
+    $postU = toString(addu);
+    $postS = toString(adds);
     console.log($postU, $postS);
-    var create = "INSERT INTO `tb_usuarios` (`usu_ID` ,`usu_Nome`, `usu_Senha`) VALUES (?,?,?)"; //CREATE
-    sql.query(create, function (err, result, fields) {
+    var create = "INSERT INTO `tb_usuarios` (`usu_ID` ,`usu_Nome`, `usu_Senha`) VALUES ?"; //CREATE
+    var values = [
+        [addu, adds]
+    ];
+    sql.query(create, [values], function (err, result, fields) {
         if (err) {
             console.log("Erro a o executar a Query");
             console.log(err);
